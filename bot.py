@@ -97,7 +97,7 @@ class MyClient(discord.Client):
             #done
             
 client = MyClient()
-client.run('ODA3MTE1NzIzNTg3MDU5NzIy.YBzTFw.irnKnz0GNo4FmTY0FLgHp4ouO80')
+client.run(<token here>)
 
 
 

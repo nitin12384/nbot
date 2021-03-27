@@ -1,0 +1,61 @@
+{
+    "waiting" :
+    [
+        "Wait! let me think....",
+        "Thinking.....",
+        "Trying to remember....",
+        "Oh! let me think",
+        "I am trying to figure out what to say?"
+
+    ],
+
+    "polite" : 
+    [
+        "I dont understand.",
+        "I didn't get it.",
+        "What do you mean?",
+        "I dont know.",
+        "Is this a correct statement?",
+        "Can you Review your question again.",
+        "Is your spelling correct?",
+        "This might be a wrong Question.",  
+        "I need to be trained more to answer this.",
+        "I didn't get that.",
+        "I couldn't figure out a response.",
+        "Sorry I couldn't answer."
+    ], 
+    "rude" : 
+    [
+        "I dont want to talk anymore.",
+        "Are you kidding me.",
+        "Can you check your grammar again?",
+        
+        "Ask Again.",
+        "Useless Question.",
+        "I dont want to answer.",
+        "Are you alien?",
+        "Are you robot?",
+        "go away.",
+        "You just leave me.",
+        "You better complete your question.",
+        
+        "Do you understand grammar properly?",
+
+        "This is not the right way to talk."
+        
+    ],
+    
+    "rudePlus" : 
+    [
+        "Go to hell.",
+        "You are mad.",
+        "You are mindless.",
+        "You are a big jerk.",
+        "You moron.... Leave me.",
+        "Stop asking stupid question",
+        "~Error - too foolish Question asked",
+        "Are you out of your mind?",
+        "You are eating my brain..."
+    ]
+
+}

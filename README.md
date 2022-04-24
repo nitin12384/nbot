@@ -25,6 +25,6 @@ To use this bot you need to have
 # screenshots
 
 <img src="./images/SS1.png" alt="SS1" />
-<img src="./images/SS1.png" alt="SS2" />
+<img src="./images/SS2.png" alt="SS2" />
 
 

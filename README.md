@@ -18,7 +18,13 @@ To use this bot you need to have
 - Now chat with your bot using discord server 
 
 # chatting instructions 
-- nbot will listen to you if you begin your message with nbot 
-- use n
+- nbot will listen to you if you begin your message with nbot
+- use ` nbot <Questino> ` to ask anything. 
+- use ` nbot -debug <Questoin> ` to see debug info.
 
 # screenshots
+
+<img src="./images/SS1.png" alt="SS1" />
+<img src="./images/SS1.png" alt="SS2" />
+
+

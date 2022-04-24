@@ -2,6 +2,9 @@
 
 A python chatbot for discord, based on pattern matching of predefined responsed, saved in a file.
 
+# !!! 
+Code is not working currently. Will be updated soon.
+
 # requirements 
 
 To use this bot you need to have 

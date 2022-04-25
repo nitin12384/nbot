@@ -1,6 +1,6 @@
 # nbot
 
-A python chatbot for discord, based on pattern matching of predefined responsed, saved in a file.
+A python chatbot for discord, based on pattern matching of predefined responses, saved in a file.
 
 # !!! 
 Code is not working currently. Will be updated soon.

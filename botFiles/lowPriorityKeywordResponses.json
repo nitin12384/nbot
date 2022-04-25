@@ -1,0 +1,11 @@
+[
+    {
+        "tag" : "you know",
+        "inp" : [
+                    "you know"
+                ],
+        "out" : [
+                    "I dont know much. Especially about this"
+                ]
+    }
+]

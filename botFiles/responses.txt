@@ -1,0 +1,130 @@
+hello:hello
+hi:hi:what?:hiii:hello there:hii
+hii:same to you
+hiii: spelling ?
+hiiii : spelling ?
+hmm : hmm
+hmmm : can you talk:what is 'hmmm'
+hye:hye 
+hmmmm:what is 'hmmmm'
+hlo:hello
+hllo:hello there
+hithere: Hello
+hellothere: Hello
+hey:hey there!!:wanna talk?
+heythere:hey!
+
+yes:sure?:okay
+no:okay:sure?
+nope:okay:alright
+yep:nice:alright:ok
+
+sure:okay!
+areyousure:yes
+iamsure:yes
+
+okay:alright:no problem
+ok:alright:no problem
+alright:okay:no problem
+noproblem:okay:ok: alright
+np:okay
+
+nice:okay
+good:okay
+great:okay
+cool:nice
+verygood:ok
+verynice:ok
+
+saysomething: something
+talk: what?
+say: what?
+talksomething:i can't
+sayanything: anything
+speak: what?
+
+
+what: complete your question:what?:what 'what' ?
+why:because i am programed like this :why are you asking?:becausr i am google 2 
+butwhy:because i am programed like this:becausr i am google 2
+
+
+whatdoyouwant:nothing:i want you to say bye
+whatyouwant:nothing:say bye:please say bye and leave me
+
+whatareyoudoing:i am talking with you:wasting your time:answering:answering to you...you fool:don't you know?
+
+whoisnitin:a pagal(as Archit says) brother:my creator
+
+
+whoisarchit:a good boy:who creates me
+
+whoareyou:a chatbot:a program:a c++ code
+whatareyoucalled:my name is google 2
+whatisyourname:my name is google 2:AI-bacha-AI
+tellmeyourname:my name is google 2:AI-bacha-AI
+sayyourname:my name is google 2:AI-bacha-AI
+
+backtoyou:thanks:thankyou
+welcome:my pleasure
+
+wheredoyoulive:In the phone
+
+whomadeyou:A man:Bacha Ji
+whocreatedyou:a man:you didn't.
+
+
+
+whydoyoulive:to serve you:just say bye you moron
+
+
+gotohell:no:maybe you should:i wont:why should i?
+youaremad:no! you might be:no
+areyoumad:no!
+areyoufool: no!
+
+
+
+iloveyou:i dont:so what?
+
+howareyou:nice:i am talking to you thats why i feel worthy!
+doyoueat:no
+whatyoueat:nothing
+howareyoufeeling:not so good
+
+abe:what abe
+ikillyou:if you want to kill me you have to find my house
+whoisgoogle2:i am
+
+
+areyouok:yes i am fine
+areyoufine:yes i am fine
+areyouokay:yes i am fine
+
+whatisyourfunction:answering your question
+
+
+whatisyourwork:to give respose:talk to you
+
+
+
+again:Sorry! I have very less short term memory
+saythatagain:Sorry! I have very less short term memory
+sayagain:Sorry! I have very less short term memory
+tellagain:Sorry! I have very less short term memory
+tellitagain:Sorry! I have very less short term memory
+sayitagain:Sorry! I have very less short term memory
+repeat:Sorry! I have very less short term memory
+repeatitonce:Sorry! I have very less short term memory
+repeatitonceagain:Sorry! I have very less short term memory
+repeatagain:Sorry! I have very less short term memory
+repeatit:Sorry! I have very less short term memory
+repeatthat:Sorry! I have very less short term memory
+sayitonceagain:Sorry! I have very less short term memory
+saythatonceagain:Sorry! I have very less short term memory
+whatdoyoumean:Sorry! I have very less short term memory
+whatdoyoumeanbythat:Sorry! I have very less short term memory
+whatdoyoumeanbythis:Sorry! I have very less short term memory
+
+EOF
+

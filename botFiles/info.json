@@ -1,0 +1,16 @@
+[
+    [
+        "corona", "covid", "vnit", "college", "studies"
+    ],
+    {
+        "subject"       : "Car",
+        "definitions"   : ["Car is a Vehicle with 4 tyres. By the way, I have never seen one."],
+        "otherInfo"     : ["Cars are cool. But they cause a lot of pollution"]
+    },
+    {
+        "subject"       : "Discord",
+        "definitions"   : ["Discord is best place to talk"],
+        "otherInfo"     : ["I am known as nbot on discord"]
+    }
+
+]

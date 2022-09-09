@@ -38,14 +38,15 @@ class Response :
         if(self.nMsg == 0):
             return False
 
-        if( self.nMsg != len(self.msgs) or self.nMsg != len(delays) ) :
+        if( self.nMsg != len(self.msgs) or self.nMsg != len(self.delays) ) :
             return False
 
         for delay in self.delays :
-            if(delay < minDelay or delay > maxDelay) :
+            if(delay < Response.minDelay or delay > Response.maxDelay) :
                 return False
         
         return True
+
 
 
 class Info :
@@ -165,14 +166,14 @@ class Bot :
         self.logFile                = open(self.logPath, 'a') # append mode
             
 
-def sendToDiscord(response, msgObj) :
+async def sendToDiscord(response, msgObj) :
     """Sends a discord response :
     Parameters : Response Object, and Discord message object"""
     if not response.checkIsValid() :
     	#update an log file
         return
     for i in range(0, response.nMsg) :
-        delay( response.delays[i])
+        #delay( response.delays[i])
         await msgObj.channel.send(response.msgs[i].format(msgObj))
 
 
@@ -398,6 +399,5 @@ class MyClient(discord.Client):
             decodeMsgAndRespond(message, botDict)
             
 
-client = MyClient()
-client.run("")      
+MyClient().run("76546hgd65376edrsgfsdgfds4sfsdf")      
         

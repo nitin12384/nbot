@@ -1,9 +1,24 @@
 
+from os import remove
 from botlib import Bot
 
 def get_response(input_msg:str, bot:Bot)->str:
+    # ---------- Step 1 : Remove bot mention from the text 
+    input_msg = remove_mention(input_msg)
+
+
+    # ---------- Step 2 : Handle Special Cases
+    # ------------------- Case A : Empty Input
+    # Todo : Put it in a seperate file
+    empty_input_responses = ["What?", "??"]
+    
+    # ---------- Step 3 : Search resopnse from files
     pass
 
+def remove_mention(input_msg:str)->str:
+    pass
+
+def search_response_from_files(input_msg:str, bot:Bot)->
 
 def decodeMsgAndRespond(msgObj, botDict ) :
     """This is basically the bot manager

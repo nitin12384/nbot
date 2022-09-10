@@ -1,6 +1,6 @@
 
 
-class Info :
+class GenericInfo :
     """This class defines a informaton regarding a subject : 
     Example  subject - Car , definition = car is a vehicle with 4 tyres """
     def __init__(self):
@@ -13,7 +13,7 @@ class Info :
         return( self.definition)
 
 
-class Response :
+class GenericResponse :
     """This class defines a Response : contains nMsg as int,
     msgs as string list of messges,
     delays as integer list of delay in millisec """
@@ -49,7 +49,7 @@ class Response :
             return False
 
         for delay in self.delays :
-            if(delay < Response.minDelay or delay > Response.maxDelay) :
+            if(delay < GenericResponse.minDelay or delay > GenericResponse.maxDelay) :
                 return False
         
         return True

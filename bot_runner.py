@@ -6,7 +6,7 @@ from botlib.clients import TestClient
 def main():
     Logger.info("Bot Runner Initiated")
     token = get_discord_token()
-    client = TestClient(intents=discord.Intents.default())
+    client = TestClient()
     client.run(token)
 
     Logger.info("Bot Runner Exiting...")

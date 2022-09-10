@@ -1,6 +1,9 @@
+from distutils.log import Log
+from doctest import REPORT_CDIFF
 import discord
 
 from botlib import response
+from botlib import Logger
 
 async def sendToDiscord(response, msgObj) :
     """Sends a discord response :
@@ -14,18 +17,23 @@ async def sendToDiscord(response, msgObj) :
 
 
 class TestClient(discord.Client):
+
+    def __init__(self):
+        super(TestClient, self).__init__(intents = discord.Intents.default())
+
     async def on_ready(self):
         print('Logged in as')
         print(self.user.name)
         print(self.user.id)
         print('------')
 
-    async def on_message(self, message):
+    async def on_message(self, message:discord.Message):
         if message.author.id == self.user.id:
             # do nothin
             pass
         else :
             # Called only when nbot is mentioned, or replied to.
             response = "nbot heard : '" + str(message.content) + "'"
+            Logger.log(response)
             await message.channel.send(response)
     

@@ -36,4 +36,27 @@ class TestClient(discord.Client):
             response = "nbot heard : '" + str(message.content) + "'"
             Logger.log(response)
             await message.channel.send(response)
-    
+
+
+# Client that will listen to all messages
+class TestClient2(discord.Client):
+
+    def __init__(self):
+        super(TestClient2, self).__init__(intents = discord.Intents(messages=True))
+        
+    async def on_ready(self):
+        print('Logged in as')
+        print(self.user.name)
+        print(self.user.id)
+        print('------')
+
+    async def on_message(self, message:discord.Message):
+        if message.author.id == self.user.id:
+            # do nothin
+            pass
+        else :
+            # Called only when nbot is mentioned, or replied to.
+            response = "nbot heard : '" + str(message.content) + "'"
+            Logger.log(response)
+            await message.channel.send(response)
+

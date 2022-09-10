@@ -42,7 +42,12 @@ class TestClient(discord.Client):
 class TestClient2(discord.Client):
 
     def __init__(self):
-        super(TestClient2, self).__init__(intents = discord.Intents(messages=True))
+        intent = discord.Intents.default()
+
+        # WARNING - This requires message_content Intent to be enables in bot settings in discord developer Portal
+        intent.message_content = True
+        
+        super(TestClient2, self).__init__(intents = intent)
         
     async def on_ready(self):
         print('Logged in as')

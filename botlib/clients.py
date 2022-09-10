@@ -1,3 +1,7 @@
+import discord
+
+from botlib import response
+
 async def sendToDiscord(response, msgObj) :
     """Sends a discord response :
     Parameters : Response Object, and Discord message object"""
@@ -9,8 +13,7 @@ async def sendToDiscord(response, msgObj) :
         await msgObj.channel.send(response.msgs[i].format(msgObj))
 
 
-        
-class MyClient(discord.Client):
+class TestClient(discord.Client):
     async def on_ready(self):
         print('Logged in as')
         print(self.user.name)
@@ -22,5 +25,6 @@ class MyClient(discord.Client):
         if message.author.id == self.user.id:
             return
         else:
-            decodeMsgAndRespond(message, botDict)
-            
+            response = "nbot heard : '" + message.content + "'"
+            await message.channel.send(response)
+    

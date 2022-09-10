@@ -1,6 +1,5 @@
 
 from enum import Enum
-from msilib.schema import ControlCondition
 
 import time
 

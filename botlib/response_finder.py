@@ -1,3 +1,10 @@
+
+from botlib import Bot
+
+def get_response(input_msg:str, bot:Bot)->str:
+    pass
+
+
 def extractToken(curDict) :
     """Extract Token from string
     Parameter : A dictionary with 'msg', 'isOption', 'isQuoted', 'token' keys

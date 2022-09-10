@@ -1,6 +1,17 @@
+
+import json
+
 class Bot :
     "This is just to make all properties of bot at one place, and to be able to maintain multiple bots"
-    def __init__(self):
+    def __init__(self,
+        setRespPath     ,
+        noAnsPath       ,
+        kwordRespPath   ,
+        lpKwordRespPath ,
+        infoPath        ,
+        logPath         ,
+        creators        
+    ):
         """Intializer"""
 
         self.basicReset()   # basic properties
@@ -8,19 +19,13 @@ class Bot :
         self.loadFiles  = True # should you load files in memory beforehand
         self.toAns      = False # will you answer or not
         
-        self.setRespPath        = "./botFiles/setResponses.json"   # file path for set responses
-        self.noAnsPath          = "./botFiles/noAnswer.json"   # file path for no Answer Responses
-        self.kwordRespPath      = "./botFiles/keywordResponses.json" # file path for keyword responses
-        self.lpKwordRespPath    = "./botFiles/lowPriorityKeywordResponses.json" # file path for low priority keyword responses
-        self.infoPath           = "./botFiles/info.json"            # stores info of certain subjects
-        
-        self.logPath = "./botFiles/log.txt"
-        self.tokenPath = "./botFiles/token.disctoken"       # this files should not be online, 
-                                                            # otherwise Discord Grimlins will notice.
-        
-        self.teachers = ["Nitin", "Onkar"]                  # who can use -learn, -learnkwd, -learninfo 
-        self.creators = ["Nitin"]                           # some advanced options
-        
+        self.setRespPath      = setRespPath             
+        self.noAnsPath        = noAnsPath       
+        self.kwordRespPath    = kwordRespPath   
+        self.lpKwordRespPath  = lpKwordRespPath 
+        self.infoPath         = infoPath        
+        self.logPath          = logPath         
+        self.creators         = creators        
         
         # ----------- JSON Objects
         self.setResponses = None
@@ -100,3 +105,18 @@ class Bot :
         self.keywordResponsesFile   = open(self.kwordRespPath, 'w')
         self.infoFile               = open(self.infoPath, 'w')
         self.logFile                = open(self.logPath, 'a') # append mode
+
+
+def build_default_nbot() -> Bot :
+    nbot = Bot(
+        setRespPath         = "./botFiles/setResponses.json",
+        noAnsPath           = "./botFiles/noAnswer.json",
+        kwordRespPath       = "./botFiles/keywordResponses.json", # file path for keyword responses
+        lpKwordRespPath     = "./botFiles/lowPriorityKeywordResponses.json", # file path for low priority keyword responses
+        infoPath            = "./botFiles/info.json",            # stores info of certain subjecta
+        logPath             = "./botFiles/log.txt",
+        creators            = ["Nitin"]       
+    )
+    nbot.loadFilesInMem()
+    return nbot
+

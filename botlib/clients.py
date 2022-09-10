@@ -1,9 +1,9 @@
-from distutils.log import Log
-from doctest import REPORT_CDIFF
+from distutils.command.build import build
 import discord
 
-from botlib import response
 from botlib import Logger
+from botlib.bot import build_default_nbot
+from botlib.response_finder import get_response
 
 async def sendToDiscord(response, msgObj) :
     """Sends a discord response :
@@ -38,6 +38,37 @@ class TestClient(discord.Client):
             await message.channel.send(response)
 
 
+class DefaultClient(discord.Client):
+
+    def __init__(self):
+        super(TestClient, self).__init__(intents = discord.Intents.default())
+        self.bot = build_default_nbot()
+    
+    async def on_ready(self):
+        print('Logged in as')
+        print(self.user.name)
+        print(self.user.id)
+        print('------')
+
+    async def on_message(self, message:discord.Message):
+        # Called only when nbot is mentioned, or replied to.
+            
+        if message.author.id == self.user.id:
+            # do nothin
+            pass
+        else :
+            input_msg = str(message.content)
+            
+            # Get Response
+            response = get_response(input_msg, self.bot)
+            Logger.log("Input : " + input_msg + " Response : " + response)
+            
+            # send to discord
+            await message.channel.send(response)
+
+
+
+# WARNING - This requires message_content Intent to be enables in bot settings in discord developer Portal
 # Client that will listen to all messages
 class TestClient2(discord.Client):
 

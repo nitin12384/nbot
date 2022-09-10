@@ -15,11 +15,11 @@ class ConsoleLogger:
         self.logging_level = logging_level
 
     def log(self, msg):
-        if self.logging_level <= LoggingLevel.LOG :
+        if self.logging_level.value <= LoggingLevel.LOG.value :
             print(ConsoleLogger.add_time(msg))
     
     def info(self, msg):
-        if self.logging_level <= LoggingLevel.INFO :
+        if self.logging_level.value <= LoggingLevel.INFO.value :
             print(ConsoleLogger.add_time(msg))
 
     @staticmethod

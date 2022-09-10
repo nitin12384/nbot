@@ -18,7 +18,12 @@ def get_response(input_msg:str, bot:Bot)->str:
 def remove_mention(input_msg:str)->str:
     pass
 
-def search_response_from_files(input_msg:str, bot:Bot)->
+def search_response_from_files(input_msg:str, bot:Bot)-> str :
+    # ---------- Step 1 : Find response in set responses
+    # ---------- Step 2 : Find response in keyword responses
+    # ---------- Step 3 : Find response in low priority keyword responses
+    # ---------- Step 4 : Get a random no_answer response
+    pass
 
 def decodeMsgAndRespond(msgObj, botDict ) :
     """This is basically the bot manager

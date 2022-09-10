@@ -21,10 +21,11 @@ class TestClient(discord.Client):
         print('------')
 
     async def on_message(self, message):
-        # we do not want the bot to reply to itself
         if message.author.id == self.user.id:
-            return
-        else:
-            response = "nbot heard : '" + message.content + "'"
+            # do nothin
+            pass
+        else :
+            # Called only when nbot is mentioned, or replied to.
+            response = "nbot heard : '" + str(message.content) + "'"
             await message.channel.send(response)
     

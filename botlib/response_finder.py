@@ -79,10 +79,13 @@ def find_set_response(set_responses, msg):
 
 # Todo    
 def find_keyword_response(keyword_responses, msg):
-    pass
+    
+    response = ""
+    response_found = False
+    return response_found, response
 
 # Todo
 def find_noans_response(noans_responses):
-    pass
+    return random.choice(noans_responses["polite"])
         
 

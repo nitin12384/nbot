@@ -2,3 +2,11 @@
 [Sun Sep 11 14:50:09 2022] : [LOG]nbot
 [Sun Sep 11 14:50:09 2022] : [LOG]807115723587059722
 [Sun Sep 11 14:50:09 2022] : [LOG]------
+[Sun Sep 11 14:51:28 2022] : [LOG]Logged in as
+[Sun Sep 11 14:52:01 2022] : [LOG]Logged in as
+[Sun Sep 11 14:52:01 2022] : [LOG]User : nbot ID : 807115723587059722
+[Sun Sep 11 14:52:11 2022] : [LOG]Input :  Response : ??
+[Sun Sep 11 14:52:14 2022] : [LOG]Input :  Response : ??
+[Sun Sep 11 14:55:21 2022] : [LOG]Logged in as
+[Sun Sep 11 14:55:21 2022] : [LOG]User : nbot ID : 807115723587059722
+[Sun Sep 11 14:55:27 2022] : [LOG]Input :  Response : ??

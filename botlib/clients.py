@@ -46,17 +46,21 @@ class DefaultClient(discord.Client):
     
     async def on_ready(self):
         Logger.log('Logged in as')
-        Logger.log("User : " + self.user.name + " ID : " + self.user.id)
+        Logger.log("User : " + self.user.name + " ID : " + str(self.user.id))
 
     async def on_message(self, message:discord.Message):
-        # Called only when nbot is mentioned, or replied to.
             
         if message.author.id == self.user.id:
             # do nothin
-            pass
+            return
         else :
             input_msg = str(message.content)
             
+            if input_msg == "":
+                # this is what nbot reads when someone sends a message
+                # and doesnt mention him
+                return 
+
             # Get Response
             response = get_response(input_msg, self.bot)
             Logger.log("Input : " + input_msg + " Response : " + response)

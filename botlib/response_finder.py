@@ -20,23 +20,9 @@ def get_response(input_msg:str, bot:Bot)->str:
     # ---------- Step 3 : Search resopnse from files
     return search_response_from_files(input_msg, bot)
 
-# Todo
-def remove_mention(msg:str)->str:
-    
-
-    
-    return msg
-
 
 def input_msg_preprocess(input_msg)->str:
-    # ---------- Step 1 : Remove mention
-    input_msg = remove_mention(input_msg)
-
-    # ---------- Step 2 : Keep only alphabet characters
-    input_msg = get_alphabets_only(input_msg)
-    
-    return input_msg
-
+    return get_alphabets_only(input_msg)
 
 def search_response_from_files(input_msg:str, bot:Bot)-> str :
 

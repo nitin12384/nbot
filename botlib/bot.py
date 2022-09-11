@@ -1,6 +1,7 @@
 
-from curses.ascii import isalpha
 import json
+
+from botlib.util import get_alphabets_only
 
 class Bot :
     "This is just to make all properties of bot at one place, and to be able to maintain multiple bots"
@@ -72,16 +73,9 @@ class Bot :
     
     def preprocess_inp(responses):
         for cur_dict in responses:
-            cur_dict["inp"] = [ Bot._inp_msg_preprocess(inp_msg) for inp_msg in cur_dict["inp"] ]
+            cur_dict["inp"] = [ get_alphabets_only(inp_msg) for inp_msg in cur_dict["inp"] ]
 
     
-    def _inp_msg_preprocess(msg):
-        res = ""
-        for c in msg:
-            if isalpha(c):
-                res += c.lower()
-
-        return res
 
 def build_default_nbot() -> Bot :
     nbot = Bot(

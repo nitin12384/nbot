@@ -1,7 +1,7 @@
 
-from os import remove
 import random
 from botlib import Bot, Logger
+from botlib.util import get_alphabets_only
 
 def get_response(input_msg:str, bot:Bot)->str:
     # ---------- Step 1 : Remove bot mention from the text 
@@ -26,15 +26,13 @@ def remove_mention(msg:str)->str:
     
     return msg
 
-# Todo
-def remove_whitespace(msg:str)->str:
-    return msg
 
 def input_msg_preprocess(input_msg)->str:
     # ---------- Step 1 : Remove mention
     input_msg = remove_mention(input_msg)
-    # ---------- Step 2 : Remove whitespace from left and right side.
-    input_msg = input_msg.strip()
+
+    # ---------- Step 2 : Keep only alphabet characters
+    input_msg = get_alphabets_only(input_msg)
     
     return input_msg
 

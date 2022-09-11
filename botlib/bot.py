@@ -1,4 +1,5 @@
 
+from curses.ascii import isalpha
 import json
 
 class Bot :
@@ -60,6 +61,27 @@ class Bot :
         self.lowpKeywordResponses   = json.load( open(self.lpKwordRespPath, 'r') )
         self.noAnswer               = json.load( open(self.noAnsPath,       'r') )
 
+    def preprocess_for_querying(self):
+        """ Preprocess the data of files for querying ."""
+        # removing whitespace, and punctuation from intput
+        # converting to lowercase
+        Bot.preprocess_inp(self.setResponses)
+        Bot.preprocess_inp(self.keywordResponses)
+        Bot.preprocess_inp(self.lowpKeywordResponses)
+
+    
+    def preprocess_inp(responses):
+        for cur_dict in responses:
+            cur_dict["inp"] = [ Bot._inp_msg_preprocess(inp_msg) for inp_msg in cur_dict["inp"] ]
+
+    
+    def _inp_msg_preprocess(msg):
+        res = ""
+        for c in msg:
+            if isalpha(c):
+                res += c.lower()
+
+        return res
 
 def build_default_nbot() -> Bot :
     nbot = Bot(
@@ -69,5 +91,6 @@ def build_default_nbot() -> Bot :
         lpKwordRespPath     = "./botFiles/lowPriorityKeywordResponses.json" # file path for low priority keyword responses      
     )
     nbot.loadFilesInMem()
+    nbot.preprocess_for_querying()
     return nbot
 

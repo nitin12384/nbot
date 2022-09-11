@@ -17,7 +17,7 @@ class Logger:
 
     def __init__(self, logging_level = LoggingLevel.LOG):
         self.logging_level = logging_level
-        self.log_file = open(_log_file_path, 'w')
+        self.log_file = open(_log_file_path, 'a')
 
     def _do_logging(self, msg, file_logging):
         if file_logging:

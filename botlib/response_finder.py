@@ -7,11 +7,12 @@ def get_response(input_msg:str, bot:Bot)->str:
     # ---------- Step 1 : Remove bot mention from the text 
     input_msg = input_msg_preprocess(input_msg)
 
-    # ---------- Step 2 : Handle Special Cases
-    
+    Logger.info("input_msg after preprocessing : " + input_msg)
+
     # Todo : Put it in a seperate file
     empty_input_responses = ["What?", "??"]
-    
+
+    # ---------- Step 2 : Handle Special Cases
     # ------------------- Case A : Empty Input
     if input_msg == "" :
         return random.choice(empty_input_responses)
@@ -69,7 +70,7 @@ def find_set_response(set_responses, msg):
     
     for cur_dict in set_responses :
         if msg in cur_dict["inp"] :
-            Logger.log("Response found in set_response with tag : " + str(cur_dict["tag"]))
+            Logger.info("Response found in set_response with tag : " + str(cur_dict["tag"]))
             response = random.choice( cur_dict["out"] )
             break
     

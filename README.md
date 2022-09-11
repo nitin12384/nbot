@@ -3,7 +3,6 @@
 A python chatbot for discord, based on pattern matching of predefined responses, saved in a file.
 
 # !!! 
-Code is not working currently. Will be updated soon.
 
 # requirements 
 
@@ -16,18 +15,9 @@ To use this bot you need to have
 
 # how to run 
 
-- Make sure `botFiles` directory exist in the same folder where you run `bot.py`
-- Run bot using `python bot.py` 
-- Now chat with your bot using discord server 
+- run $ python3 bot_runner.py
 
 # chatting instructions 
-- nbot will listen to you if you begin your message with nbot
-- use ` nbot <Questino> ` to ask anything. 
-- use ` nbot -debug <Questoin> ` to see debug info.
-
-# screenshots
-
-<img src="./images/SS1.png" alt="SS1" />
-<img src="./images/SS2.png" alt="SS2" />
+- nbot will listen to you if you mention @nbot in the message
 
 

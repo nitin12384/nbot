@@ -43,3 +43,12 @@
 [Sun Sep 11 15:05:30 2022] : [INFO]input_msg after preprocessing : goduck
 [Sun Sep 11 15:05:30 2022] : [LOG]Input : <@807115723587059722> go duck Response : This might be a wrong Question.
 [Sun Sep 11 15:06:09 2022] : [INFO]Bot Runner Exiting...
+[Sun Sep 11 15:10:33 2022] : [INFO]Bot Runner Initiated
+[Sun Sep 11 15:10:37 2022] : [LOG]Logged in as
+[Sun Sep 11 15:10:37 2022] : [LOG]User : nbot ID : 807115723587059722
+[Sun Sep 11 15:10:41 2022] : [INFO]input_msg after preprocessing : 
+[Sun Sep 11 15:10:41 2022] : [LOG]Input : <@807115723587059722> Response : What?
+[Sun Sep 11 15:10:49 2022] : [INFO]input_msg after preprocessing : youarenotgood
+[Sun Sep 11 15:10:49 2022] : [LOG]Input : <@807115723587059722> you are not good . Response : Is this a correct statement?
+[Sun Sep 11 15:34:45 2022] : [LOG]Logged in as
+[Sun Sep 11 15:34:45 2022] : [LOG]User : nbot ID : 807115723587059722

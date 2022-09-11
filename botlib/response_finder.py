@@ -27,7 +27,7 @@ def remove_mention(msg:str)->str:
     return msg
 
 # Todo
-def remove_whitespace(msg):
+def remove_whitespace(msg:str)->str:
     return msg
 
 def input_msg_preprocess(input_msg)->str:
@@ -35,6 +35,7 @@ def input_msg_preprocess(input_msg)->str:
     input_msg = remove_mention(input_msg)
     # ---------- Step 2 : Remove whitespace from left and right side.
     input_msg = input_msg.strip()
+    
     return input_msg
 
 

@@ -46,9 +46,7 @@ class DefaultClient(discord.Client):
     
     async def on_ready(self):
         Logger.log('Logged in as')
-        Logger.log(self.user.name)
-        Logger.log(self.user.id)
-        Logger.log('------')
+        Logger.log("User : " + self.user.name + " ID : " + self.user.id)
 
     async def on_message(self, message:discord.Message):
         # Called only when nbot is mentioned, or replied to.

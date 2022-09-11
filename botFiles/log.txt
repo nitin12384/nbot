@@ -10,3 +10,36 @@
 [Sun Sep 11 14:55:21 2022] : [LOG]Logged in as
 [Sun Sep 11 14:55:21 2022] : [LOG]User : nbot ID : 807115723587059722
 [Sun Sep 11 14:55:27 2022] : [LOG]Input :  Response : ??
+[Sun Sep 11 14:57:37 2022] : [LOG]Logged in as
+[Sun Sep 11 14:57:37 2022] : [LOG]User : nbot ID : 807115723587059722
+[Sun Sep 11 14:58:48 2022] : [LOG]Logged in as
+[Sun Sep 11 14:58:48 2022] : [LOG]User : nbot ID : 807115723587059722
+[Sun Sep 11 14:59:58 2022] : [INFO]Bot Runner Initiated
+[Sun Sep 11 15:00:02 2022] : [LOG]Logged in as
+[Sun Sep 11 15:00:02 2022] : [LOG]User : nbot ID : 807115723587059722
+[Sun Sep 11 15:00:06 2022] : [INFO]input_msg after preprocessing : hi
+[Sun Sep 11 15:01:17 2022] : [INFO]Response found in set_response with tag : greeting
+[Sun Sep 11 15:01:57 2022] : [INFO]Bot Runner Initiated
+[Sun Sep 11 15:02:01 2022] : [LOG]Logged in as
+[Sun Sep 11 15:02:01 2022] : [LOG]User : nbot ID : 807115723587059722
+[Sun Sep 11 15:02:08 2022] : [INFO]input_msg after preprocessing : hi
+[Sun Sep 11 15:02:08 2022] : [INFO]Response found in set_response with tag : greeting
+[Sun Sep 11 15:02:08 2022] : [LOG]Input : <@807115723587059722> hi Response : Hey, you cool
+[Sun Sep 11 15:02:24 2022] : [INFO]input_msg after preprocessing : greetings
+[Sun Sep 11 15:02:31 2022] : [INFO]Response found in set_response with tag : greeting
+[Sun Sep 11 15:02:38 2022] : [LOG]Input : <@807115723587059722> greetings Response : Greetings !
+[Sun Sep 11 15:03:05 2022] : [INFO]input_msg after preprocessing : fuckyou
+[Sun Sep 11 15:04:53 2022] : [INFO]Bot Runner Initiated
+[Sun Sep 11 15:04:57 2022] : [LOG]Logged in as
+[Sun Sep 11 15:04:57 2022] : [LOG]User : nbot ID : 807115723587059722
+[Sun Sep 11 15:05:00 2022] : [INFO]input_msg after preprocessing : asdfsaf
+[Sun Sep 11 15:05:00 2022] : [LOG]Input : <@807115723587059722> asdfsaf Response : I didn't get that.
+[Sun Sep 11 15:05:04 2022] : [INFO]input_msg after preprocessing : hi
+[Sun Sep 11 15:05:04 2022] : [INFO]Response found in set_response with tag : greeting
+[Sun Sep 11 15:05:04 2022] : [LOG]Input : <@807115723587059722> hi Response : Greetings !
+[Sun Sep 11 15:05:09 2022] : [INFO]input_msg after preprocessing : hello
+[Sun Sep 11 15:05:09 2022] : [INFO]Response found in set_response with tag : greeting
+[Sun Sep 11 15:05:09 2022] : [LOG]Input : <@807115723587059722> hello Response : Hello, how can I help
+[Sun Sep 11 15:05:30 2022] : [INFO]input_msg after preprocessing : goduck
+[Sun Sep 11 15:05:30 2022] : [LOG]Input : <@807115723587059722> go duck Response : This might be a wrong Question.
+[Sun Sep 11 15:06:09 2022] : [INFO]Bot Runner Exiting...

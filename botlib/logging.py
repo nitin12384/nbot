@@ -43,6 +43,6 @@ class DefaultLogger:
     def add_time(msg):
         return "["+time.asctime()+"] : "+str(msg) 
 
-Logger = DefaultLogger()
+Logger = DefaultLogger(LoggingLevel.INFO)
 
 

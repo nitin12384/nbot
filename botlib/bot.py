@@ -60,7 +60,7 @@ class Bot :
         self.setResponses           = json.load( open(self.setRespPath,     'r') )
         self.keywordResponses       = json.load( open(self.kwordRespPath,   'r') )
         self.lowpKeywordResponses   = json.load( open(self.lpKwordRespPath, 'r') )
-        self.noAnswer               = json.load( open(self.noAnsPath,       'r') )
+        self.noAnsResponses         = json.load( open(self.noAnsPath,       'r') )
 
     def preprocess_for_querying(self):
         """ Preprocess the data of files for querying ."""

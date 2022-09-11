@@ -72,6 +72,7 @@ def find_set_response(set_responses, msg):
         if msg in cur_dict["inp"] :
             Logger.info("Response found in set_response with tag : " + str(cur_dict["tag"]))
             response = random.choice( cur_dict["out"] )
+            response_found = True
             break
     
 

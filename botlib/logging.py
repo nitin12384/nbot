@@ -13,7 +13,7 @@ class LoggingLevel(Enum):
     WARN = 3
     ERROR = 4
 
-class Logger:
+class DefaultLogger:
 
     def __init__(self, logging_level = LoggingLevel.LOG):
         self.logging_level = logging_level
@@ -39,6 +39,6 @@ class Logger:
     def add_time(msg):
         return "["+time.asctime()+"] : "+str(msg) 
 
-Logger = Logger()
+Logger = DefaultLogger()
 
 

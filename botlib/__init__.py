@@ -1,3 +1,3 @@
 
-from .logging import (ConsoleLogger, Logger)
+from .logging import (Logger)
 from .bot import (Bot)

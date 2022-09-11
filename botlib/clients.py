@@ -41,7 +41,7 @@ class TestClient(discord.Client):
 class DefaultClient(discord.Client):
 
     def __init__(self):
-        super(TestClient, self).__init__(intents = discord.Intents.default())
+        super(DefaultClient, self).__init__(intents = discord.Intents.default())
         self.bot = build_default_nbot()
     
     async def on_ready(self):

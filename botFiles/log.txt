@@ -52,3 +52,33 @@
 [Sun Sep 11 15:10:49 2022] : [LOG]Input : <@807115723587059722> you are not good . Response : Is this a correct statement?
 [Sun Sep 11 15:34:45 2022] : [LOG]Logged in as
 [Sun Sep 11 15:34:45 2022] : [LOG]User : nbot ID : 807115723587059722
+[Mon Sep 12 08:15:45 2022] : [INFO]Bot Runner Initiated
+[Mon Sep 12 08:15:49 2022] : [LOG]Logged in as
+[Mon Sep 12 08:15:49 2022] : [LOG]User : nbot ID : 807115723587059722
+[Mon Sep 12 08:16:36 2022] : [INFO]input_msg after preprocessing : howareyou
+[Mon Sep 12 08:16:36 2022] : [INFO]Response found in set_response with tag : greeting
+[Mon Sep 12 08:16:36 2022] : [LOG]Input : <@807115723587059722> how are you Response : Hi
+[Mon Sep 12 08:16:44 2022] : [INFO]input_msg after preprocessing : whoisyourcreator
+[Mon Sep 12 08:16:44 2022] : [INFO]Keyword yourcreator found with tag creator
+[Mon Sep 12 08:16:44 2022] : [LOG]Input : <@807115723587059722> who is your creator Response : Nitin Kumar made me out of bulky python code.
+[Mon Sep 12 08:17:26 2022] : [INFO]input_msg after preprocessing : 
+[Mon Sep 12 08:17:26 2022] : [LOG]Input : <@807115723587059722> 2+2 = ? Response : What?
+[Mon Sep 12 08:17:49 2022] : [INFO]input_msg after preprocessing : youaresodumb
+[Mon Sep 12 08:17:49 2022] : [INFO]Keyword youare found with tag are you
+[Mon Sep 12 08:17:49 2022] : [LOG]Input : <@807115723587059722> you are so dumb Response : I am just a piece of .py and .json files.
+[Mon Sep 12 08:18:48 2022] : [INFO]input_msg after preprocessing : hi
+[Mon Sep 12 08:18:48 2022] : [INFO]Response found in set_response with tag : greeting
+[Mon Sep 12 08:18:48 2022] : [LOG]Input : <@807115723587059722> hi Response : Hi there!
+[Mon Sep 12 08:18:52 2022] : [INFO]input_msg after preprocessing : howareyou
+[Mon Sep 12 08:18:52 2022] : [INFO]Response found in set_response with tag : greeting
+[Mon Sep 12 08:18:52 2022] : [LOG]Input : <@807115723587059722> how are you Response : Hi
+[Mon Sep 12 08:19:02 2022] : [INFO]input_msg after preprocessing : doyoueat
+[Mon Sep 12 08:19:02 2022] : [INFO]Keyword doyou found with tag are you
+[Mon Sep 12 08:19:02 2022] : [LOG]Input : <@807115723587059722> do you eat ? Response : I am just a non-living Python Code
+[Mon Sep 12 08:19:17 2022] : [INFO]input_msg after preprocessing : doyoulovebeingabot
+[Mon Sep 12 08:19:17 2022] : [INFO]Keyword doyou found with tag are you
+[Mon Sep 12 08:19:17 2022] : [LOG]Input : <@807115723587059722> do you love being a bot Response : I am just a non-living Python Code
+[Mon Sep 12 08:19:30 2022] : [INFO]input_msg after preprocessing : doyouloveanything
+[Mon Sep 12 08:19:30 2022] : [INFO]Keyword doyou found with tag are you
+[Mon Sep 12 08:19:30 2022] : [LOG]Input : <@807115723587059722> do you love anything Response : I am just a non-living Python Code
+[Mon Sep 12 08:20:01 2022] : [INFO]Bot Runner Exiting...

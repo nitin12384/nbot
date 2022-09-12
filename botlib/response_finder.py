@@ -64,14 +64,22 @@ def find_set_response(set_responses, msg):
 
     return response_found, response
 
-# Todo    
+
 def find_keyword_response(keyword_responses, msg):
-    
     response = ""
     response_found = False
+
+    for cur_dict in keyword_responses:
+        for inp in cur_dict["inp"]:
+            if inp in msg:
+                Logger.info( "Keyword " + str(inp) + " found with tag " + str(cur_dict["tag"]) )
+                response_found = True 
+                response = random.choice( cur_dict["out"])
+                break
+        if response_found:
+            break
     return response_found, response
 
-# Todo
 def find_noans_response(noans_responses):
     return random.choice(noans_responses["polite"])
         
